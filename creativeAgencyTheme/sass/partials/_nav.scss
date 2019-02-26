@@ -1,0 +1,35 @@
+@import './variables';
+// NAVIGATION STYLES
+.navbar {
+    box-shadow: 0 4px 3px rgba(0, 0, 0, 0.096);
+    background: transparent;
+
+    ul {
+        // background: transparent;
+        text-align: center;
+
+        .nav-item {
+            font-size: 18px;
+            margin-top: 24px;
+            margin-right: 24px;
+            font-weight: bold;
+
+            &:hover {
+                border-bottom: 3px solid $secondary-color;
+                border-radius: 15%;
+            }
+        }
+        .nav-link {
+            color: $secondary-color !important;
+        }
+    }
+}
+.navbar-light .navbar-toggler {
+    border: none;
+    outline: none;
+}
+
+// TOGGLE OPACITY ON CLICK 
+.toggle--nav {
+    opacity: 0.5;
+}

@@ -1,0 +1,277 @@
+/* line 3, ../sass/partials/_nav.scss */
+.navbar {
+  box-shadow: 0 4px 3px rgba(0, 0, 0, 0.096);
+  background: transparent;
+}
+/* line 7, ../sass/partials/_nav.scss */
+.navbar ul {
+  text-align: center;
+}
+/* line 11, ../sass/partials/_nav.scss */
+.navbar ul .nav-item {
+  font-size: 18px;
+  margin-top: 24px;
+  margin-right: 24px;
+  font-weight: bold;
+}
+/* line 17, ../sass/partials/_nav.scss */
+.navbar ul .nav-item:hover {
+  border-bottom: 3px solid #007BFF;
+  border-radius: 15%;
+}
+/* line 22, ../sass/partials/_nav.scss */
+.navbar ul .nav-link {
+  color: #007BFF !important;
+}
+
+/* line 27, ../sass/partials/_nav.scss */
+.navbar-light .navbar-toggler {
+  border: none;
+  outline: none;
+}
+
+/* line 33, ../sass/partials/_nav.scss */
+.toggle--nav {
+  opacity: 0.5;
+}
+
+/* line 3, ../sass/partials/_main.scss */
+body, html {
+  width: 100%;
+  height: 100%;
+  background: whitesmoke;
+}
+
+/* line 11, ../sass/partials/_main.scss */
+.card-flip > div {
+  backface-visibility: hidden;
+  transition: transform 300ms;
+  transition-timing-function: linear;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  display: flex;
+}
+
+/* line 21, ../sass/partials/_main.scss */
+.card-front {
+  transform: rotateY(0deg);
+  box-shadow: 0 4px 3px rgba(0, 0, 0, 0.096);
+  background: rgba(84, 193, 252, 0.041);
+}
+
+/* line 27, ../sass/partials/_main.scss */
+.card-back {
+  transform: rotateY(180deg);
+  position: absolute;
+  top: 0;
+  box-shadow: 0 6px 3px rgba(0, 0, 0, 0.096);
+}
+
+/* line 34, ../sass/partials/_main.scss */
+.card-flip:hover .card-front {
+  transform: rotateY(-180deg);
+}
+
+/* line 38, ../sass/partials/_main.scss */
+.card-flip:hover .card-back {
+  transform: rotateY(0deg);
+}
+
+/* line 42, ../sass/partials/_main.scss */
+.card--img {
+  display: block;
+  margin: auto;
+}
+
+/* line 48, ../sass/partials/_main.scss */
+#contact {
+  width: 100%;
+  height: 200px;
+  margin-top: 12px;
+  color: whitesmoke;
+  background: url("/images/Group 1426.png") no-repeat left center;
+}
+
+/* line 57, ../sass/partials/_main.scss */
+.team--copy {
+  width: 100%;
+  border-radius: 12px;
+  padding: 12px;
+  margin-top: 12px;
+  box-shadow: 0 3px 3px rgba(128, 128, 128, 0.219);
+  margin-right: 6px;
+}
+/* line 65, ../sass/partials/_main.scss */
+.team--copy img {
+  width: 50px;
+}
+/* line 67, ../sass/partials/_main.scss */
+.team--copy:nth-of-type(1) {
+  background: #ABDDF1;
+}
+/* line 69, ../sass/partials/_main.scss */
+.team--copy:nth-of-type(2) {
+  background: #FDE8DC;
+}
+/* line 71, ../sass/partials/_main.scss */
+.team--copy:nth-of-type(3) {
+  background: #EBFFF4;
+}
+/* line 73, ../sass/partials/_main.scss */
+.team--copy:nth-of-type(4) {
+  background: #D9E9F4;
+}
+
+/* line 77, ../sass/partials/_main.scss */
+#works {
+  margin-top: 60px;
+}
+
+/* line 80, ../sass/partials/_main.scss */
+.gallery {
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+  -webkit-column-width: 33%;
+  -moz-column-width: 33%;
+  column-width: 33%;
+}
+/* line 88, ../sass/partials/_main.scss */
+.gallery .gallery .pics {
+  -webkit-transition: all 350ms ease;
+  transition: all 350ms ease;
+}
+/* line 93, ../sass/partials/_main.scss */
+.gallery .gallery .animation {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+/* line 102, ../sass/partials/_main.scss */
+hr {
+  width: 50%;
+  height: 2px;
+  background: #007BFF;
+}
+
+/* = CARD HEIGHT */
+/* line 111, ../sass/partials/_main.scss */
+.row-equal > div[class*='col-'] {
+  display: flex;
+  flex: 1 0 auto;
+}
+
+/* line 116, ../sass/partials/_main.scss */
+.row-equal .card {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* EQUAL HEIGHT INSIDE */
+/* line 122, ../sass/partials/_main.scss */
+.carousel-inner > .row-equal.active,
+.carousel-inner > .row-equal.next,
+.carousel-inner > .row-equal.prev {
+  display: flex;
+}
+
+/* PREVENT FLICKER */
+/* line 129, ../sass/partials/_main.scss */
+.carousel-inner > .row-equal.active.left,
+.carousel-inner > .row-equal.active.right {
+  opacity: 0.5;
+  display: flex;
+}
+
+/* line 135, ../sass/partials/_main.scss */
+.card {
+  background: transparent;
+  border: none;
+  margin: 0 auto;
+}
+/* line 140, ../sass/partials/_main.scss */
+.card .testimonial {
+  width: 100%;
+}
+/* line 143, ../sass/partials/_main.scss */
+.card .testimonial::before {
+  content: '"';
+  color: #007BFF;
+  font-size: 68px;
+  transform: rotate(2deg);
+}
+/* line 151, ../sass/partials/_main.scss */
+.card .testimonial--img {
+  width: 66px;
+  height: 66px;
+}
+
+/* line 160, ../sass/partials/_main.scss */
+.blog--card {
+  border: .2px solid #1E2F4F;
+  border-radius: 12px;
+  box-shadow: 0 3px 3px rgba(128, 128, 128, 0.219);
+  margin-bottom: 0 0 22px 0;
+  padding: 0;
+}
+/* line 168, ../sass/partials/_main.scss */
+.blog--card img[alt="user-avatar"] {
+  width: 33px;
+}
+/* line 172, ../sass/partials/_main.scss */
+.blog--card .card--footer {
+  border-top: 1px solid black;
+}
+
+/* line 3, ../sass/partials/_footer.scss */
+#footer {
+  background: #1E2F4F url("/images/Intersection 1.png") no-repeat center center;
+  background-size: cover;
+  color: white;
+  margin-top: 24px;
+}
+/* line 10, ../sass/partials/_footer.scss */
+#footer form {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  margin: 0 auto;
+}
+/* line 16, ../sass/partials/_footer.scss */
+#footer form input {
+  flex-grow: 2;
+}
+/* line 20, ../sass/partials/_footer.scss */
+#footer form i {
+  font-size: 32px;
+  margin-left: -48px;
+  color: #007BFF;
+  margin-top: 3px;
+}
+
+@media (max-width: 450px) {
+  /* line 5, ../sass/partials/_media-queries.scss */
+  .gallery {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+    -webkit-column-width: 100%;
+    -moz-column-width: 100%;
+    column-width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  /* line 18, ../sass/partials/_media-queries.scss */
+  .btn.filter {
+    padding-left: 1.1rem;
+    padding-right: 1.1rem;
+  }
+}
+@media (max-width: 767.98px) {
+  /* line 26, ../sass/partials/_media-queries.scss */
+  #cardHider {
+    display: none;
+  }
+}

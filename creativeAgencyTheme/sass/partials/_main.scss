@@ -1,0 +1,176 @@
+@import './variables';
+// Main Styles 
+
+body, html {
+    width: 100%;
+    height: 100%;
+    background: $bg-color;
+    color: $primary-color;
+}
+
+
+// SERVICES STYLES
+.card-flip > div {
+    backface-visibility: hidden;
+    transition: transform 300ms;
+    transition-timing-function: linear;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+  }
+  
+  .card-front {
+    transform: rotateY(0deg);
+    box-shadow: 0 4px 3px $bxShdw;
+    background: rgba(84, 193, 252, 0.041);
+  }
+  
+  .card-back {
+    transform: rotateY(180deg);
+    position: absolute;
+    top: 0;
+    box-shadow: 0 6px 3px $bxShdw;
+  }
+  
+  .card-flip:hover .card-front {
+    transform: rotateY(-180deg);
+  }
+    
+  .card-flip:hover .card-back {
+    transform: rotateY(0deg);
+  }
+
+  .card--img {
+      display: block;
+      margin: auto;
+  }
+
+// CONTACT STYLES
+  #contact {
+      width: 100%;
+      height:200px;
+      margin-top: 12px;
+        color: whitesmoke;
+        background: url('/images/Group\ 1426.png')no-repeat left center;   
+  }
+
+// TEAM STYLES
+.team--copy {
+  width: 100%;
+  border-radius: 12px;
+  padding: 12px;
+  margin-top: 12px;
+  box-shadow: 0 3px 3px rgba(128, 128, 128, 0.219);
+  margin-right: 6px;
+
+  img { width: 50px; }
+
+  &:nth-of-type(1) { background: $tmc-01; }
+
+  &:nth-of-type(2) { background: $tmc-02; }
+
+  &:nth-of-type(3) { background: $tmc-03; }
+
+  &:nth-of-type(4) { background: $tmc-04; }
+}
+
+// WORKS STYLES
+#works { margin-top: 60px; }
+
+// GALLERY STYLES
+.gallery {
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+  -webkit-column-width: 33%;
+  -moz-column-width: 33%;
+  column-width: 33%;
+
+  .gallery .pics {
+      -webkit-transition: all 350ms ease;
+      transition: all 350ms ease;
+  }
+
+  .gallery .animation {
+      -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+      transform: scale(1);
+  }
+
+}
+
+// HR GLOBAL
+hr {
+  width: 50%;
+  height: 2px;
+  background: $secondary-color;
+}
+
+// TESTIMONIAL CAROUSEL 
+
+/* = CARD HEIGHT */
+.row-equal>div[class*='col-'] {
+  display: flex;
+  flex: 1 0 auto;
+}
+
+.row-equal .card {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* = HEIGHT INSIDE */
+.carousel-inner>.row-equal.active,
+.carousel-inner>.row-equal.next,
+.carousel-inner>.row-equal.prev {
+  display: flex;
+}
+
+/* PREVENT FLICKER */
+.carousel-inner>.row-equal.active.left,
+.carousel-inner>.row-equal.active.right {
+  opacity: 0.5;
+  display: flex;
+}
+
+.card {
+  background: transparent;
+  border: none;
+  margin: 0 auto;
+
+  .testimonial {
+      width: 100%;
+// QUOTE
+      &::before {
+          content: '"';
+          color: $secondary-color;
+          font-size: 68px;
+          transform: rotate(2deg);
+      }
+  }
+// CARD IMAGE
+  .testimonial--img {
+      width: 66px;
+      height: 66px;
+  }
+}
+
+// BLOG STYLES
+.blog--card {
+  border: .2px solid $primary-color;
+  border-radius: 12px;
+  box-shadow: 0 3px 3px rgba(128, 128, 128, 0.219);
+  margin-bottom: 0 0 22px 0;
+  padding: 0;
+
+// BLOG CARD IMAGE 
+  img[alt="user-avatar"] {
+      width: 33px;
+  }
+// BLOG CARD FOOTER 
+  .card--footer {
+      border-top: 1px solid $primary-color;
+  }
+}
+

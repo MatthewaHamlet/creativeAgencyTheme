@@ -1,0 +1,28 @@
+@import './variables';
+// FOOTER STYLES
+
+#footer {
+
+    background: $primary-color url('/images/Intersection\ 1.png') no-repeat center center;
+    background-size: cover;
+    color: white;
+    margin-top: 24px;
+
+    form {
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        margin: 0 auto;
+
+        input {
+            flex-grow: 2;
+        }
+
+        i {
+            font-size: 32px;
+            margin-left: -48px;
+            color: $secondary-color ;
+            margin-top: 3px
+        }
+    }
+}
