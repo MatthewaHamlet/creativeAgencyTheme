@@ -1,2 +1,2 @@
 # creativeAgencyTheme
-Creative Agency - A commerce theme for tattoo equipment
+Creative Agency - A commerce theme for creative business agencies.
